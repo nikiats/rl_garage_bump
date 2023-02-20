@@ -14,6 +14,7 @@ THIS PROGRAM WITH ALL THE CODE IS PROVIDED AS-IS WITHOUT ANY WARRANY. ONLY YOU A
 
 ### Extension will be loaded and become active
 The extension produces a sound after it is started and after every single trade bump. You can disable it by setting `SOUND_ENABLED` to `false` in `bumper.js`
+There are some timing gaps between actions, so after you press `START` and see the page is reloading, be patient to watch how it works.
 
 ## Usage
 - Open `bumper.js` file and change **MY_USERNAME** parameter (line 1) to your user's nickname on RL Garage
@@ -26,7 +27,5 @@ The extension produces a sound after it is started and after every single trade 
 
 ## If you really like it...
 It would be nice to receive some LTC from you in case you are really satisfied with the app.
-
-Any amount is appreciated 😊
 
 `LTC`:  ltc1qfjyfm077zq0w5vk06f0egzfv4tltm6xgk35ay2

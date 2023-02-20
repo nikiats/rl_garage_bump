@@ -36,8 +36,10 @@ function bumpAll() {
 function playSound(sound) {
     if(!SOUND_ENABLED) return;
     console.log('Playing sound ' + sound);
-    let s = new Audio(sound);
+    let s = document.createElement('audio');
+    s.src = sound;
     s.volume = 0.8;
+    document.body.appendChild(s);
     s.play();
 }
 
@@ -124,14 +126,15 @@ setTimeout(() => {
     border: 3px solid lime;
     background-color: black;
     color: lime;
-    z-index: 500000;
+    z-index: 100000;
     `;
 
     let button = document.querySelector('.my-awesome-start-bumper-button');
+    console.log(button);
 
 
     if(localStorage.getItem('start') == '1') {
-        playSound(sbad);
+        //playSound(sbad);
         button.style.color = 'red';
         button.innerHTML = stop_text;
         started = true;
