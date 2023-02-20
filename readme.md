@@ -25,6 +25,7 @@ THIS PROGRAM WITH ALL THE CODE IS PROVIDED AS-IS WITHOUT ANY WARRANY. ONLY YOU A
 
 ## If you really like it...
 It would be nice to receive some LTC from you in case you are really satisfied with the app.
+
 Any amount is appreciated 😊
 
 `LTC`:  ltc1qfjyfm077zq0w5vk06f0egzfv4tltm6xgk35ay2
