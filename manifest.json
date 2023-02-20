@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "RLG Bumper",
+  "version": "1.0",
+  "description": "Auto bump for trades on the RL Garage platform",
+  "icons": {},
+  "content_scripts": [
+    {
+      "matches": [
+        "https://rocket-league.com/*"
+      ],
+      "js": [
+        "bumper.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "sounds/bad.mp3",
+    "sounds/bump.mp3"
+  ]  
+}
