@@ -5,6 +5,8 @@ let sbadUrl = null;
 let MATCH_URL = `https://rocket-league.com/trades/${MY_USERNAME}`;
 console.log(MATCH_URL);
 
+let SOUND_ENABLED = true;
+
 function checkTime(ts) {
     if(ts.includes('minute')) {
         let mn = Number(ts.split(' ')[0])
@@ -32,6 +34,8 @@ function bumpAll() {
 }
 
 function playSound(sound) {
+    if(!SOUND_ENABLED) return;
+    console.log('Playing sound ' + sound);
     let s = new Audio(sound);
     s.volume = 0.8;
     s.play();
@@ -70,7 +74,7 @@ function recursivka(trades, i, stage) {
     } else {
         let b = trade.querySelector('.rlg-trade__bump');
         b.click();
-        playSound(sgood);
+        playSound(sgoodUrl);
         setTimeout(() => {
             recursivka(trades, i+1, 0);
         }, 15_000);
@@ -97,7 +101,8 @@ function startTicker() {
 
 setTimeout(() => {
     sgoodUrl = browser.runtime.getURL("sounds/bump.mp3");
-    sbadUrl = browser.runtime.getURL("sounds/bad.mp3");;
+    sbadUrl = browser.runtime.getURL("sounds/bad.mp3");
+    console.log([sgoodUrl, sbadUrl]);
 
 
     console.log('Setting button event');
@@ -126,7 +131,7 @@ setTimeout(() => {
 
 
     if(localStorage.getItem('start') == '1') {
-        //playSound(sbad);
+        playSound(sbad);
         button.style.color = 'red';
         button.innerHTML = stop_text;
         started = true;

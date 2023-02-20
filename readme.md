@@ -13,6 +13,7 @@ THIS PROGRAM WITH ALL THE CODE IS PROVIDED AS-IS WITHOUT ANY WARRANY. ONLY YOU A
 - Find `Load temporary add-on` and select a `manifest.json` as a file (it will be in downloaded folder). 
 
 ### Extension will be loaded and become active
+The extension produces a sound after it is started and after every single trade bump. You can disable it by setting `SOUND_ENABLED` to `false` in `bumper.js`
 
 ## Usage
 - Open `bumper.js` file and change **MY_USERNAME** parameter (line 1) to your user's nickname on RL Garage
