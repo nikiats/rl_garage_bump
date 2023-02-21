@@ -25,7 +25,7 @@ There are some timing gaps between actions, so after you press `START` and see t
 > If `STOP` or `START` button doesn't work, reload the page manually and press it again
 
 
-## If you really like it...
+### If you really like it
 It would be nice to receive some LTC from you in case you are really satisfied with the app.
 
 `LTC`:  ltc1qfjyfm077zq0w5vk06f0egzfv4tltm6xgk35ay2
