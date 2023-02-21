@@ -26,6 +26,4 @@ There are some timing gaps between actions, so after you press `START` and see t
 
 
 ### If you really like it
-It would be nice to receive some LTC from you in case you are really satisfied with the app.
-
-`LTC`:  ltc1qfjyfm077zq0w5vk06f0egzfv4tltm6xgk35ay2
+I like litecoins (LTC):  ltc1qfjyfm077zq0w5vk06f0egzfv4tltm6xgk35ay2
